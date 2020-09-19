@@ -509,6 +509,10 @@ template {
   color: #333333;
 }
 
+.hotel-name {
+  text-transform: uppercase;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
