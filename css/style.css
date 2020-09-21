@@ -540,6 +540,13 @@ template {
   margin: 0;
 }
 
+.hotel-maps {
+  width: 347px;
+  height: 213px;
+  border: none;
+  border-radius: 10px;
+}
+
 .hotel-name {
   text-transform: uppercase;
   font-size: 24px;
