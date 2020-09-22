@@ -35,6 +35,11 @@
   color: $light
   background-color: $main-color
 .raiting
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  flex-wrap: wrap
+  align-content: center
   max-width: 65px
   min-height: 45px 
   border-radius: 4px  
@@ -42,6 +47,7 @@
   background-color: $main-color 
   color: $light
   &__text
+    padding-bottom: 4px
     font-size: 8px
     font-weight: 600
   &__counter
