@@ -861,9 +861,9 @@ template {
 
 .newsletter-parallax {
   padding: 50px 0 70px 0;
-  background-image: url(../img/newsletter/parallax-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
 }
 
