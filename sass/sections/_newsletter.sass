@@ -1,0 +1,60 @@
+.newsletter
+  position: relative
+  &-parallax
+    padding: 50px 0 70px 0
+    background-image: url(../img/newsletter/parallax-bg.jpg) 
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($dark,0.8 )
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: relative
+    max-width: 731px
+    margin: auto
+    margin-top: 31px
+  &-title
+    font-size: 24px
+    font-weight: 300
+    color: $light
+    &__sub
+      display: block
+      font-size: 36px
+      font-weight: 600
+      text-transform: uppercase
+.subscribe
+  position: relative
+  width: 350px
+  height: 55px
+  border-radius: 4px
+  overflow: hidden
+  &__input
+    position: absolute
+    width: 100%
+    height: 100%
+    padding-left: 33px
+    padding-right: 75px
+
+    font-size: 14px
+    font-weight: 300
+  &__button
+    position: absolute
+    min-width: 65px
+    right: 0
+    top: 0
+    height: 100%
+    background-color: $main-color
+    color: $light
+.feedback
+  padding-top: 100px

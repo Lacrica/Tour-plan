@@ -10,7 +10,8 @@
          height: 100%
          object-fit: cover
 @media ( max-width: 992px )
-  .container
+  .container,
+  .newsletter-wrapper
     max-width: 700px
   .navbar
     &-top
@@ -87,6 +88,12 @@
       min-height: 450px
   .booking,#map
     width: 100%
+  .newsletter
+    &-wrapper
+      flex-direction: column
+      max-width: 576px
+      width: 92%
+      align-items: flex-start
 @media   ( max-width: 576px )
   .logo
     width: 99px

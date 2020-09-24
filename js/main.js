@@ -27,3 +27,4 @@ function init() {
     myMap.geoObjects.add(myPlacemark);
 
 }
+
