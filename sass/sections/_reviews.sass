@@ -1,0 +1,82 @@
+.reviews
+  padding: 14px 0 70px 0
+  &__title
+    font-size: 36px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 70px
+  &__raiting
+    margin-bottom: 29px
+  &-slider
+    &__item
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 730px
+      margin: 45px auto 0
+      padding: 0 95px 30px
+      background-color: #fff
+      background-repeat: 8px
+      &::before
+        content: ''
+        position: absolute
+        left: 62px
+        top: 13px
+        width: 70px
+        height: 47px
+        background-image: url(../img/reviews/quotes-left.svg)
+        background-repeat: no-repeat
+      &::after
+        content: ''
+        position: absolute
+        right: 62px
+        top: 118px
+        width: 70px
+        height: 47px
+        background-image: url(../img/reviews/quotes-right.svg)
+        background-repeat: no-repeat
+    &__button
+      position: absolute
+      top: 48%
+      transform: translateY(-50%)
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-size: 10px
+      background-position:  center
+      background-color: transparent
+      z-index: 99
+      &--prev
+        background-image: url(../img/reviews/arrow-secondary-prev.svg)
+        left: 20px
+      &--next
+        background-image: url(../img/reviews/arrow-secondary-next.svg)
+        right: 20px
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -45px
+    &__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+    &__username
+      font-size: 12px
+      font-weight: 700
+      color: $main-color
+      margin-bottom: 10px
+    &__date
+      font-size: 10px
+      font-weight: 400
+      margin-bottom: 4px
+    &__text
+      max-width: 537px
+      font-size: 12px
+      font-weight: 400
+      line-height: 19.2px
+      text-align: justify
+      margin: auto
