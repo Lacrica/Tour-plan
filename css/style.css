@@ -1218,9 +1218,9 @@ template {
             flex-direction: column;
     max-width: 576px;
     width: 92%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
