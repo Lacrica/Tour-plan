@@ -1,14 +1,13 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-  .slider
-    width: 590px
-  .swiper
-     &-slide
-       &__img
-         width: 100%
-         height: 100%
-         object-fit: cover
+  .hotel
+    &-slider
+      width: 590px
+      &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
 @media ( max-width: 992px )
   .container,
   .newsletter-wrapper
@@ -35,11 +34,15 @@
       margin-bottom: 30px
     &-block
       flex-direction: row
-  .slider
+  .hotel__slider
     width: 100%
   .booking,#map
     width: 340px
     min-height: 210px
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
 @media ( max-width: 767px )
   .container
     max-width: 576px
@@ -66,6 +69,11 @@
         height: 1px
         background-color: $text-color
   .hotel
+    &-slider
+      height: 350px
+    &-block
+      flex-direction: column
+      min-height: 450px
     &-info
       &__name
         flex-basis: 100%
@@ -80,12 +88,6 @@
       justify-content: space-between
   .star
     flex-basis: auto
-  .slider
-    height: 350px
-  .hotel
-    &-block
-      flex-direction: column
-      min-height: 450px
   .booking,#map
     width: 100%
   .newsletter
@@ -94,12 +96,28 @@
       max-width: 576px
       width: 92%
       align-items: flex-start
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &::after, &::before
+          display: none
+      &__button
+        top: 45px
+        &--prev
+          left: 50%
+          margin-left: -65px
+          transform: translate(-50%, 0)
+        &--next
+          right: 50%
+          margin-right: -65px
+          transform: translate(50%, 0)     
 @media   ( max-width: 576px )
   .logo
     width: 99px
-  .slider
-    height: 230px
   .hotel
+    &-slider
+      height: 230px
     &__slider
       margin-bottom: 20px
 @media   ( max-width: 320px )
@@ -115,7 +133,7 @@
         &-button
           margin-left: 6px
           margin-top: 6px
-  .slider
+  .hotel__slider
     width: 279px
     height: 179px
   .booking
@@ -149,7 +167,7 @@
       margin-top: 5px
   .newsletter
     &-parallax
-      padding: 32px 0 81px 0
+      padding: 34px 0 81px 0
     &-wrapper
       margin-right: 5px
     &-title
@@ -168,3 +186,22 @@
   .hotel
     &-block
       min-height: 309px
+  .reviews
+    &__raiting
+      margin-right: 0
+    &__title
+      padding: 0 10px 0
+      margin-top: 26px
+      margin-bottom: 41px
+      line-height: 23px
+      font-size: 18px
+      font-weight: 700
+    &-slider
+      &__button
+        top: 33px
+        &--next
+        margin-right: -90px
+        &--prev
+        margin-left: -90px
+      &__text
+        text-align: left
