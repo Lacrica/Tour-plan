@@ -1314,8 +1314,12 @@ template {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
-  .booking, #map {
+  .booking {
     width: 100%;
+  }
+  #map {
+    width: 100%;
+    min-height: 210px;
   }
   .newsletter-wrapper {
     -webkit-box-orient: vertical;
@@ -1367,6 +1371,12 @@ template {
   }
   .card {
     width: 100%;
+  }
+  #map {
+    min-height: 173px\;;
+  }
+  .newsletter__subscribe {
+    width: 280px;
   }
 }
 
