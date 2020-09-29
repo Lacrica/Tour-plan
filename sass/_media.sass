@@ -31,6 +31,7 @@
     &__input
       width: 340px  
   .hotel
+    padding-bottom: 61px
     &-grid
       flex-direction: column
     &__slider
@@ -46,7 +47,11 @@
     &-slider
       &__item
         max-width: 580px
-        padding: 0px 61px 29px;
+        padding: 0px 61px 29px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 52px
   .activities
     padding: 34px 0 98px 0
     &-wrapper
@@ -56,6 +61,8 @@
   .card
     width: 339px
     height: 256px
+    &__title
+      word-break: break-all
 @media ( max-width: 767px )
   .container
     max-width: 576px
@@ -135,6 +142,8 @@
   .logo
     width: 99px
   .hotel
+    &-block
+      min-height: 440px
     &-slider
       height: 230px
     &__slider
@@ -142,7 +151,7 @@
   .card
     width: 100%
   #map
-    min-height: 173px\
+    min-height: 210px
   .newsletter
     &__subscribe
       width: 280px
@@ -162,11 +171,8 @@
   .hotel__slider
     width: 279px
     height: 179px
-  .booking
-    width: 279px
-    height: 210px
   #map
-    width: 280px
+    width: 279px
     min-height: 173px
     margin-top: 20px
   .breadcrumb
