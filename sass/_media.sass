@@ -119,13 +119,63 @@
       margin-bottom: 15px
     &__payment
       grid-column: 4
+
 @media ( max-width: 767px )
   .container  
     max-width: 576px
     width: 92%
   .navbar
-    &-bottom,&__user,&__search
+    &__user, &__search
+      &_mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+    &__search
+      &_mobile
+        &_visible
+          margin-left: 0
+          margin-bottom: 18px
+          max-width: 245px
+    &__user
+      flex-direction: column
+      justify-content: center
+    &__mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 89px
+      padding-top: 30px
+      &_visible
+        display: block
+    &-menu
+      flex-direction: column
+      &__item
+        margin-top: 20px 
+        font-size: 12px
+        line-height: 15px
+        &_mobile
+          &_visible
+            display: block
+    &__user
+      &_mobile
+        &_visible
+          color: $light
+          padding-left: 0
+          margin-top: 6px
+          margin-bottom: 14px
+          text-transform: none
+  body
+    padding-top: 89px
   .logo
     width: 132px
   .menu

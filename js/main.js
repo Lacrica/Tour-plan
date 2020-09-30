@@ -23,18 +23,10 @@ var reviewsSlider = new Swiper(".reviews-slider", {
   },
 });
 
-ymaps.ready(init);
-
-function init() {
-    var myMap = new ymaps.Map('map', {
-            center: [-20.308415, 57.367221],
-            zoom: 11
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-        myPlacemark = new ymaps.Placemark(myMap.getCenter());
-
-    myMap.geoObjects.add(myPlacemark);
-
-}
-
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке меню");
+  document
+  .querySelector(".navbar-bottom")
+  .classList.toggle("navbar-bottom_visible");
+});

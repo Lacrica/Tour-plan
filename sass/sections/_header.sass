@@ -1,5 +1,9 @@
 .navbar
   background-color: #fff
+  &__user, &__search
+  &_mobile
+    &_visible
+      display: none
   &-top
     display: flex
     align-items: center
@@ -24,6 +28,10 @@
     &__link
       text-decoration: none
       color: $light
+    &__item
+      &_mobile
+        &_visible
+          display: none
   &__nav
     font-size: 14px
     font-weight: 700

@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo"
@@ -29,7 +29,7 @@
               alt="Logo:Best Tour Plan"
           /></a>
 
-          <form action="#" class="search navbar__search">
+          <form action="#" class="search navbar__search navbar__search_mobile_hidden">
             <input
               type="text"
               class="search__input"
@@ -39,7 +39,9 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user_mobile_hidden
+
+          ">
             <img
               src="img/avatars/Avatar.jpg"
               alt="Icon:User Avatar Nathan"
@@ -60,7 +62,28 @@
       <div class="navbar-bottom">
         <div class="container">
           <nav class="navbar__nav">
-            <ul class="navbar-menu">
+            <ul class="navbar-menu ">
+              <li class="navbar__item navbar-menu__item_mobile_visible"><a href="#" class="user navbar__user navbar__user_mobile_visible
+
+                ">
+                  <img
+                    src="img/avatars/Avatar.jpg"
+                    alt="Icon:User Avatar Nathan"
+                    class="user__avatar"
+                  />
+                  <span class="user__name navbar__user_mobile_visible" >Nathan</span>
+                </a>
+                <!-- /.user --></li>
+              <li class="navbar__item navbar-menu__item_mobile_visible">
+                <form action="#" class="search navbar__search navbar__search_mobile_visible">
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                /><button class="search__button">
+                  <img src="img/icons/search.svg" alt="Icon:Search" />
+                </button>
+              </form></li>
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">All Deals</a>
               </li>

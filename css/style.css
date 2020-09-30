@@ -376,6 +376,10 @@ template {
   background-color: #fff;
 }
 
+.navbar_mobile_visible {
+  display: none;
+}
+
 .navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -422,6 +426,10 @@ template {
 .navbar-menu__link {
   text-decoration: none;
   color: #fff;
+}
+
+.navbar-menu__item_mobile_visible {
+  display: none;
 }
 
 .navbar__nav {
@@ -863,6 +871,8 @@ template {
   width: 347px;
   min-height: 213px;
   border-radius: 10px;
+  outline: none;
+  border: none;
 }
 
 .newsletter {
@@ -1605,8 +1615,70 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar-bottom, .navbar__user, .navbar__search {
+  .navbar__user_mobile_hidden, .navbar__search_mobile_hidden {
     display: none;
+  }
+  .navbar__user_mobile_visible, .navbar__search_mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__search_mobile_visible {
+    margin-left: 0;
+    margin-bottom: 18px;
+    max-width: 245px;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar__mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 89px;
+    padding-top: 30px;
+  }
+  .navbar-bottom_visible {
+    display: block;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .navbar-menu__item_mobile_visible {
+    display: block;
+  }
+  .navbar__user_mobile_visible {
+    color: #fff;
+    padding-left: 0;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    text-transform: none;
+  }
+  body {
+    padding-top: 89px;
   }
   .logo {
     width: 132px;
