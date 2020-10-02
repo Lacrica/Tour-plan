@@ -134,7 +134,7 @@
     &__search
       &_mobile
         &_visible
-          margin-left: 0
+          margin-right: 50px
           margin-bottom: 18px
           max-width: 245px
     &__user
@@ -159,6 +159,9 @@
         display: block
     &-menu
       flex-direction: column
+      &__visible
+        flex-direction: row
+        flex-wrap: wrap
       &__item
         margin-top: 20px 
         font-size: 12px
@@ -166,6 +169,7 @@
         &_mobile
           &_visible
             display: block
+            margin-left: 90px
     &__user
       &_mobile
         &_visible
@@ -308,12 +312,22 @@
       &-items
         grid-row: 8
         grid-column: 1 / 5
-      &-link
+      &-link 
         margin-right: 4px
     &__payment
         grid-row: 9
         grid-column: 1 
         margin-top: 5px
+  .navbar
+    &-menu
+      &__visible
+        flex-direction: column
+        flex-wrap: nowrap
+    &-menu
+      &__item
+        &_mobile
+          &_visible
+            margin-left: 0
 @media   ( max-width: 320px )
   .container
     max-width: 320px
