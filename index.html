@@ -309,8 +309,9 @@
             subscribe to our
             <span class="newsletter-title__sub">Newsletter</span>
           </h2>
-          <form id="email__form" required action="send.php" method="POST" class="subscribe newsletter__subscribe">
+          <form id="email__form" action="send.php" method="POST" class="subscribe newsletter__subscribe">
             <input
+              required
               name="email"
               type="email"
               class="subscribe__input"
@@ -816,7 +817,7 @@
             class="modal__message"
             placeholder="Message"
           ></textarea>
-          <div class="modal-wrapper__buton">
+          <div class="modal__wrapper-buton">
             <button class="button modal__button" type="submit">Send</button>
           <span class="modal__info">* Required Fields</span>
           </div>

@@ -1363,9 +1363,9 @@ template {
 .modal__info {
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 9px;
   line-height: 15px;
-  margin-left: 41px;
+  margin-left: 64px;
   color: #fff;
 }
 
@@ -1784,6 +1784,18 @@ template {
     flex-wrap: nowrap;
   }
   .navbar-menu__item_mobile_visible {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .modal__input, .modal__message {
+    width: 250px;
+  }
+  .modal__dialog {
+    max-width: 300px;
+  }
+  .modal__info {
     margin-left: 0;
   }
 }
