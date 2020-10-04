@@ -279,7 +279,7 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
             <iframe
@@ -309,10 +309,10 @@
             subscribe to our
             <span class="newsletter-title__sub">Newsletter</span>
           </h2>
-          <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+          <form id="email__form" required action="send.php" method="POST" class="subscribe newsletter__subscribe">
             <input
               name="email"
-              type="text"
+              type="email"
               class="subscribe__input"
               placeholder="Your email address"
             /><button class="subscribe__button">Send</button>
@@ -727,20 +727,22 @@
             <h3 class="footer__title footer__title--mb-36">
               Send us a message
             </h3>
-            <form class="footer__form" action="send.php" method="POST">
+            <form id="message__form"  class="footer__form" action="send.php" method="POST">
               <input
+                 required
                 name="name"
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
               />
               <input
+                 required
                 name="phone"
-                type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
               />
               <textarea
+                required
                 name="message"
                 class="footer__message"
                 placeholder="Message"
@@ -779,10 +781,47 @@
 
     <div class="modal">
       <div class="modal__overlay">
-        <a href="" class="modal__dialog"><img src="" alt=""></a>
       </div>
       <!-- /.modal__overlay -->
-      <div class="modal__dialog"></div>
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/icons/close.svg" alt="icon: close">
+        </a>
+        <h3 class="modal__title modal__title--mb-36">
+          Booking
+        </h3>
+        <form class="modal__form" action="send.php" method="POST">
+          <input
+             required
+            name="name"
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+          />
+          <input
+             required
+            name="phone"
+            class="input modal__input"
+            placeholder="Phone Number*"
+          />
+          <input
+             required
+            name="email"
+            class="input modal__input"
+            placeholder="Email*"
+          />
+          <textarea
+            required
+            name="message"
+            class="modal__message"
+            placeholder="Message"
+          ></textarea>
+          <div class="modal-wrapper__buton">
+            <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+          </div>
+        </form>
+      </div>
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
@@ -791,6 +830,9 @@
     <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=3bfb6c4c-65f1-4b93-9a48-5ebc2b1f1adc"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

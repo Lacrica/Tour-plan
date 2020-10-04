@@ -1255,8 +1255,118 @@ template {
   border-radius: 4px;
 }
 
-.modal {
-  background-color: #ff2;
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 478px;
+  padding: 33px 88px;
+  background-color: #0a223d;
+  border-radius: 8px;
+  z-index: 101;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.modal__title {
+  text-align: center;
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.modal__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal__input {
+  margin-bottom: 15px;
+  width: 301px;
+  height: 50px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 18px 0 18px 23px;
+  color: #BDBDBD;
+  border-radius: 4px;
+}
+
+.modal__message {
+  resize: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  border: none;
+  outline: none;
+  width: 301px;
+  height: 123px;
+  margin-bottom: 15px;
+  padding-top: 18px;
+  padding-left: 23px;
+  color: #BDBDBD;
+  border-radius: 4px;
+}
+
+.modal__button {
+  color: #fff;
+  background-color: #ec1f46;
+  padding: 18px 65px 17px 66px;
+  height: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 4px;
+}
+
+.modal__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  margin-left: 41px;
+  color: #fff;
 }
 
 @media (max-width: 1200px) {
@@ -1580,6 +1690,23 @@ template {
   }
 }
 
+@media (max-width: 620px) {
+  .navbar__search_mobile_visible {
+    margin-left: 0;
+    margin-right: 50px;
+  }
+  .navbar-menu__link {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 580px) {
+  .navbar__search_mobile_visible {
+    margin-left: 0;
+    margin-right: 3px;
+  }
+}
+
 @media (max-width: 576px) {
   .logo {
     width: 95px;
@@ -1673,6 +1800,9 @@ template {
   .navbar-top__menu-button {
     margin-left: 6px;
     margin-top: 6px;
+  }
+  .navbar__search_mobile_visible {
+    margin-left: 40px;
   }
   .hotel__slider {
     width: 279px;

@@ -1,3 +1,93 @@
 .modal
-  background-color: #ff2
-  ug
+  &__overlay
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    max-width: 478px
+    padding: 33px 88px
+    background-color: $dark
+    border-radius: 8px
+    z-index: 101
+    transform: translate(-50%, -50% )
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__close
+    position: absolute
+    right: 18px
+    top: 17px
+    cursor: pointer
+    text-decoration: none
+  &__title
+    text-align: center
+    color: $light
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    margin-bottom: 15px
+  &__form
+    display: flex
+    align-items: center
+    flex-direction: column
+  &__input
+    margin-bottom: 15px
+    width: 301px
+    height: 50px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    padding: 18px 0 18px 23px
+    color: $footer-text
+    border-radius: 4px
+  &__message
+    resize: none
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    border: none
+    outline: none
+    width: 301px
+    height: 123px
+    margin-bottom: 15px
+    padding-top: 18px
+    padding-left: 23px
+    color: $footer-text
+    border-radius: 4px
+  &__button
+    color: $light
+    background-color: $main-color
+    padding: 18px 65px 17px 66px
+    height: 50px
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    border-radius: 4px
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    margin-left: 41px
+    color: $light

@@ -259,6 +259,26 @@
       padding-top: 90px
       &-items
         grid-column: 1 / 4
+@media   ( max-width: 620px )
+  .navbar
+    &__search
+      &_mobile
+        &_visible
+          margin-left: 0
+          margin-right: 50px
+    &-menu
+      &__link
+        font-size: 11px
+@media   ( max-width: 580px )
+  .navbar
+    &__search
+      &_mobile
+        &_visible
+          margin-left: 0
+          margin-right: 3px
+
+
+                
 @media   ( max-width: 576px )
   .logo
     width: 95px
@@ -341,6 +361,10 @@
         &-button
           margin-left: 6px
           margin-top: 6px
+    &__search
+      &_mobile
+        &_visible
+          margin-left: 40px
   .hotel__slider
     width: 279px
     height: 179px
