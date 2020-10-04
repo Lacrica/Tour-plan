@@ -63,7 +63,6 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass('modal__overlay--visible');
     modalDialog.addClass('modal__dialog--visible');
-    document.body.style.overflow = 'hidden';
   };
   
 
@@ -73,8 +72,6 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
-    document.body.style.overflow = '';
-    
   };
 
   $(document).keyup(function(e) { 
