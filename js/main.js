@@ -35,21 +35,23 @@ $(document).ready(function () {
   
   $('input[name=phone]').mask("+7 (999) 999-99-99");
   
-  // $('#message__form').validate({
-  //   rules: {
-  //     name: "required",
-  //     phone: "required",
-  //     message: "required"
-  //   }
-  // });
-  
-  // $('#email__form').validate({
-  //   rules: {
-  //     email: {
-  //       required: true,
-  //       email: true
-  //   }
-  // }});
+  $(".form").each(function () {
+      $(this).validate({
+        errorClass: "invalid invalid__email",
+        messages: {
+          name: {
+            required: "Please enter your name.",
+            minlength: "The name must be more than two characters",
+          },
+          email: {
+            required: "Please enter your email.",
+          },
+          phone: {
+            required: "Enter your phone number.",
+          },
+        },
+    });
+  });
 
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");

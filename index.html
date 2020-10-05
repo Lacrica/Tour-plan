@@ -309,15 +309,18 @@
             subscribe to our
             <span class="newsletter-title__sub">Newsletter</span>
           </h2>
-          <form id="email__form" action="send.php" method="POST" class="subscribe newsletter__subscribe">
-            <input
-              required
-              name="email"
-              type="email"
-              class="subscribe__input"
-              placeholder="Your email address"
-            /><button class="subscribe__button">Send</button>
-          </form>
+          <div class="newsletter__wrapper--form">
+            <form id="email__form" action="send.php" method="POST" class="form subscribe newsletter__subscribe">
+              <input
+                required
+                name="email"
+                type="email"
+                class=" subscribe__input"
+                placeholder="Your email address"
+              />
+              <button class="subscribe__button">Send</button>
+            </form>
+          </div>
           <!-- /.subscribe -->
         </div>
         <!-- /.newsletter-wrapper -->
@@ -728,22 +731,25 @@
             <h3 class="footer__title footer__title--mb-36">
               Send us a message
             </h3>
-            <form id="message__form"  class="footer__form" action="send.php" method="POST">
-              <input
-                 required
+            <form id="message__form"  class="footer__form form" action="send.php" method="POST">
+              <div class="footer__input-group">
+                <input
+                required
                 name="name"
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
               />
-              <input
-                 required
+              </div>
+              <div class="footer__input-group">
+                <input
+                required
                 name="phone"
                 class="input footer__input"
                 placeholder="Phone Number*"
               />
+              </div>
               <textarea
-                
                 name="message"
                 class="footer__message"
                 placeholder="Message"
@@ -791,7 +797,7 @@
         <h3 class="modal__title modal__title--mb-36">
           Booking
         </h3>
-        <form class="modal__form" action="send.php" method="POST">
+        <form class="modal__form form" action="send.php" method="POST">
           <input
              required
             name="name"
@@ -812,7 +818,6 @@
             placeholder="Email*"
           />
           <textarea
-            required
             name="message"
             class="modal__message"
             placeholder="Message"
