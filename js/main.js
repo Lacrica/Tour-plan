@@ -82,5 +82,5 @@ $(document).ready(function () {
        $('.modal__dialog').removeClass('modal__dialog--visible');
     } 
   });
-
+  AOS.init();
 });
