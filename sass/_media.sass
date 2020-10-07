@@ -355,12 +355,17 @@
             margin-left: 0
 @media   ( max-width: 520px )
   .modal
-    &__input, &__message
+    &__input
       width: 250px
     &__dialog
       max-width: 300px
+    &__message
+      width: 250px  
     &__info
       margin-left: 0
+  .invalid
+    width: 250px
+
 @media   ( max-width: 320px )
   .container
     max-width: 320px
@@ -540,5 +545,23 @@
   label 
     &.invalid
       font-size: 9px
-  
-      
+      width: 135px
+@media   ( max-width: 520px  ) and ( max-height: 530px )
+  .modal
+    &__form
+      height: 246px
+    &__dialog
+    &__message
+      margin-top: 20px
+      width: 160px
+      height: 123px
+    &__wrapper
+      &-buton
+        margin-top: 23px
+        width: 135px
+    &__input
+      width: 120px
+    &__button
+      margin: 0
+      width: 100%
+      padding: 0
