@@ -23,6 +23,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
+      rel="preload"
     />
   </head>
 
@@ -30,7 +31,7 @@
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo"
+          <a href="index.html" class="logo"
             ><img
               class="logo__img"
               src="img/Logo.png"
@@ -102,16 +103,16 @@
                   </button>
                 </form>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="100">
+              <li class="navbar-menu__item" data-aos="fade-right">
                 <a href="#" class="navbar-menu__link" >All Deals</a>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="200">
+              <li class="navbar-menu__item" data-aos="fade-right">
                 <a href="#" class="navbar-menu__link" >Hotels</a>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="300">
+              <li class="navbar-menu__item" data-aos="fade-right">
                 <a href="#" class="navbar-menu__link" >Activities</a>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="400">
+              <li class="navbar-menu__item" data-aos="fade-right">
                 <a href="#" class="navbar-menu__link" >Hotel Day Packages</a>
               </li>
               <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="500">
@@ -310,7 +311,7 @@
             <span class="newsletter-title__sub">Newsletter</span>
           </h2>
           <div class="newsletter__wrapper--form">
-            <form id="email__form" action="send.php" method="POST" class="form subscribe newsletter__subscribe">
+            <form id="email__form" action="send.php" method="POST" class="newsletter__form subscribe newsletter__subscribe">
               <input
                 required
                 name="email"
@@ -392,7 +393,7 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    src="img/reviews/reviews-avatar-2.jpeg"
+                    src="img/reviews/reviews-avatar-2.jpg"
                     alt="Photo:Nick Smith"
                     class="reviews-slider__avatar"
                   />
@@ -448,7 +449,7 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    src="img/reviews/reviews-avatar-3.jpeg"
+                    src="img/reviews/reviews-avatar-3.jpg"
                     alt="Photo:Lee Sun Mi"
                     class="reviews-slider__avatar"
                   />
@@ -577,7 +578,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="#" class="logo footer__logo"
+          <a href="index.html" class="logo footer__logo"
             ><img src="img/footer/vertica-logo.svg" alt="Logo: Best Tour Plan"
           /></a>
           <div class="footer__list footer__categories">
@@ -720,7 +721,7 @@
                     alt="icon: email"
                   />
                 </div>
-                <a href="eimal:cherly.lawson@example.com" class="footer__link"
+                <a href="mailto:BuslovST@yandex.ru" class="footer__link"
                   >cherly.lawson@example.com</a
                 >
               </li>
@@ -798,25 +799,31 @@
           Booking
         </h3>
         <form class="modal__form form" action="send.php" method="POST">
-          <input
+          <div class="modal__form--wrapper">
+            <input
              required
             name="name"
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
           />
-          <input
+          </div>
+          <div class="modal__form--wrapper">
+            <input
              required
             name="phone"
             class="input modal__input"
             placeholder="Phone Number*"
           />
-          <input
-             required
-            name="email"
-            class="input modal__input"
-            placeholder="Email*"
-          />
+          </div>
+          
+          <div class="modal__form--wrapper"><input
+            required
+           name="email"
+           class="input modal__input"
+           placeholder="Email*"
+         /></div>
+          
           <textarea
             name="message"
             class="modal__message"

@@ -16,5 +16,20 @@ button
 input
   border: none
   outline: none
-.invalid
-  color: $main-color
+label
+  &.invalid
+    &__modal,
+      position: absolute
+      font-size: 12px
+      transform: translate(-300px, 65px)
+      width: 150px
+      color: $main-color
+    &__footer,
+      position: absolute
+      font-size: 12px
+      transform: translate(-255px, 50px)
+      width: 150px
+      color: $main-color
+    &__email
+      color: $main-color
+    

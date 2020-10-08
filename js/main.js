@@ -35,23 +35,51 @@ $(document).ready(function () {
   
   $('input[name=phone]').mask("+7 (999) 999-99-99");
   
-  $(".form").each(function () {
+  $(".newsletter__form").each(function () {
       $(this).validate({
-        errorClass: "invalid invalid__email",
+        errorClass: "invalid__email",
         messages: {
-          name: {
-            required: "Please enter your name.",
-            minlength: "The name must be more than two characters",
-          },
           email: {
             required: "Please enter your email.",
           },
-          phone: {
-            required: "Enter your phone number.",
-          },
+    }});
+});
+
+  $(".footer__form").each(function () {
+    $(this).validate({
+      errorClass: "invalid__footer",
+      messages: {
+        name: {
+          required: "Please enter your name.",
+          minlength: "The name must be more than two characters",
         },
-    });
+        email: {
+          required: "Please enter your email.",
+        },
+        phone: {
+          required: "Enter your phone number.",
+        },
+      },
   });
+});
+
+$(".modal__form").each(function () {
+  $(this).validate({
+    errorClass: "invalid__modal",
+    messages: {
+      name: {
+        required: "Please enter your name.",
+        minlength: "The name must be more than two characters",
+      },
+      email: {
+        required: "Please enter your email.",
+      },
+      phone: {
+        required: "Enter your phone number.",
+      },
+    },
+  });
+});
 
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");

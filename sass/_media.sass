@@ -118,10 +118,9 @@
       width: 100%
       margin-bottom: -3px
     &__message
-      margin-top: 8px
+      margin-top: 15px
     &__payment
       grid-column: 4
-
 @media ( max-width: 767px )
   .container  
     max-width: 576px
@@ -261,6 +260,12 @@
       padding-top: 90px
       &-items
         grid-column: 1 / 4
+  label
+    &.invalid
+      &__modal,
+        transform: translate(-300px, 65px)
+      &__footer,
+        transform: translate(-231px, 50px)
 @media   ( max-width: 620px )
   .navbar
     &__search
@@ -278,9 +283,6 @@
         &_visible
           margin-left: 0
           margin-right: 3px
-
-
-                
 @media   ( max-width: 576px )
   .logo
     width: 95px
@@ -365,7 +367,13 @@
       margin-left: 0
   .invalid
     width: 250px
-
+  label
+    &.invalid
+      &__modal
+        font-size: 10px
+        transform: translate(-120px, 50px)
+      &__footer
+        transform: translate(-200px, 50px)
 @media   ( max-width: 320px )
   .container
     max-width: 320px
@@ -416,6 +424,8 @@
     &__wrapper
       &--form
         max-width: 280px
+        margin-right: 13px
+        margin-top: 0
     &-parallax
       padding: 34px 0 81px 0
     &-wrapper
@@ -508,7 +518,18 @@
       margin-right: 184px
     &__payment
       margin-top: 5px
-@media   ( max-height: 530px )
+    &__input
+      &-group
+        flex-basis: 100%
+        margin-bottom: 18px
+    &__message
+      margin-top: 0
+  label
+    &.invalid
+      &__footer
+        font-size: 10px
+        transform: translate(-280px, 50px)
+@media ( max-width: 520px  ) and ( max-height: 530px )
   .modal
     &__dialog
       display: grid
@@ -517,16 +538,21 @@
       padding: 0
       height: 310px
       width: 576px
+    &__wrapper
+      &-buton
+        margin-top: 18px
+        width: 135px
+        margin-right: 25px
     &__title
-      margin-top: 
+      margin-top: 30px
       grid-column: 2 / 3 
     &__input
       margin-top: 0
-      max-width: 135px
+      max-width: 120px
     &__message
-      width: 300px
-      height: 101px
-      margin-top: 5px
+      margin-top: 21px
+      width: 160px
+      height: 123px
     &__form
       flex-direction: column
       flex-wrap: wrap
@@ -534,34 +560,29 @@
       align-items: center
       grid-column: 1 / 5
       grid-row: 2 / 5
+      height: 246px
     &__button
-      margin-bottom: 5px
-      margin-right: 56px
+      margin: 0
+      width: 100%
+      padding: 0
     &__info
       margin-left: 0
       margin-right: 10px
       &.invalid
        grid-row: 3 / 4 
-  label 
+@media  ( max-width:453px  ) and (min-width: 321px)
+  label
     &.invalid
-      font-size: 9px
-      width: 135px
-@media   ( max-width: 520px  ) and ( max-height: 530px )
+      &__footer
+        font-size: 10px
+        transform: translate(-138px, 50px)
+@media   ( max-height: 487px )
   .modal
-    &__form
-      height: 246px
     &__dialog
-    &__message
-      margin-top: 20px
-      width: 160px
-      height: 123px
-    &__wrapper
-      &-buton
-        margin-top: 23px
-        width: 135px
-    &__input
-      width: 120px
-    &__button
-      margin: 0
-      width: 100%
-      padding: 0
+      overflow-y: auto
+      overflow-x: none
+      max-height: 380px
+@media   ( max-height: 370px )
+  .modal
+    &__dialog
+      max-height: 320px
