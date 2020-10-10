@@ -14,9 +14,14 @@
   .footer
     &__input
       width: 100%
-      margin-bottom: -3px
+      margin-bottom: 5px
     &__message
       margin-top: 8px
+  label
+    &.invalid
+      &__footer
+        font-size: 10px
+        transform: translate(-219px, 50px)
 @media ( max-width: 992px )
   .container,
   .newsletter-wrapper
@@ -121,6 +126,10 @@
       margin-top: 15px
     &__payment
       grid-column: 4
+  .booking
+    &__button
+      &:hover
+        background-color: $main-color
 @media ( max-width: 767px )
   .container  
     max-width: 576px
@@ -158,6 +167,8 @@
       padding-top: 30px
       &_visible
         display: block
+        overflow-y: auto
+        max-height: 100%
     &-menu
       flex-direction: column
       &__visible
@@ -301,7 +312,7 @@
     &__subscribe
       width: 286px
     &__wrapper
-      &--form
+      &-form
         max-width: 280px
   .footer
     padding-top: 35px
@@ -390,7 +401,7 @@
     &__search
       &_mobile
         &_visible
-          margin-left: 40px
+          margin-left: 0
   .hotel__slider
     width: 279px
     height: 179px
@@ -411,6 +422,10 @@
         margin-top: 12px
       &__offer
         margin-top: 0
+    &-slider
+      &__button
+        width: 12px
+        height: 12px
   .star
     &__wrapper
       margin-right: 16px
@@ -422,7 +437,7 @@
       margin-top: 5px
   .newsletter
     &__wrapper
-      &--form
+      &-form
         max-width: 280px
         margin-right: 13px
         margin-top: 0

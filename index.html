@@ -12,18 +12,13 @@
       href="img/favicons/favicon-16x16.ico"
       type="image/x-icon"
     />
-    <link
-      rel="icon"
-      href="/img/favicons/favicon-16x16.ico"
-      type="image/x-icon"
-    />
+
     <title>Best Tour Plan - Hotel Booking</title>
 
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
-      rel="preload"
     />
   </head>
 
@@ -103,25 +98,25 @@
                   </button>
                 </form>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-right">
+              <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link" >All Deals</a>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-right">
+              <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link" >Hotels</a>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-right">
+              <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link" >Activities</a>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-right">
+              <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link" >Hotel Day Packages</a>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="500">
+              <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link" >Restaurants</a>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="600">
+              <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link" >Events</a>
               </li>
-              <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="700">
+              <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link" >Rodrigues</a>
               </li>
             </ul>
@@ -310,7 +305,7 @@
             subscribe to our
             <span class="newsletter-title__sub">Newsletter</span>
           </h2>
-          <div class="newsletter__wrapper--form">
+          <div class="newsletter__wrapper-form">
             <form id="email__form" action="send.php" method="POST" class="newsletter__form subscribe newsletter__subscribe">
               <input
                 required
@@ -706,7 +701,7 @@
                   >Tel (business hours): 269 1500</a
                 ><br />
                 <a href="tel:52566138" class="footer__link footer__link--ds"
-                  >Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
+                  >Tel (hotline) Monday - Saturday:<br>52-56-61-38 (08:00 am –
                   20:00 pm)</a
                 ><br />
                 <a href="tel:52566138" class="footer__link footer__link--ds"
@@ -798,8 +793,8 @@
         <h3 class="modal__title modal__title--mb-36">
           Booking
         </h3>
-        <form class="modal__form form" action="send.php" method="POST">
-          <div class="modal__form--wrapper">
+        <form class="modal__form form" action="send_modal.php" method="POST">
+          <div class="modal__form-wrapper">
             <input
              required
             name="name"
@@ -808,7 +803,7 @@
             placeholder="Your Full Name*"
           />
           </div>
-          <div class="modal__form--wrapper">
+          <div class="modal__form-wrapper">
             <input
              required
             name="phone"
@@ -817,7 +812,7 @@
           />
           </div>
           
-          <div class="modal__form--wrapper"><input
+          <div class="modal__form-wrapper"><input
             required
            name="email"
            class="input modal__input"

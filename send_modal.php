@@ -10,16 +10,12 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
 
-
-if(isset($_POST['email'])){
-    $title = "Новый контакт для рассылки Best Tour Plan";
-    $body = 'User mail: ' . $_POST['email'];
-} else {
     $title = "Новое обращение Best Tour Plan";
     $body .= 'Name: ' . $_POST['name'] . ' <br />';
     $body .= 'Phone: ' . $_POST['phone'] . ' <br />';
+    $body .= 'User mail: ' . $_POST['email']. ' <br />';
     $body .= 'Message: ' . $_POST['message'] . ' <br />';
-}
+
 
 
 // Настройки PHPMailer
